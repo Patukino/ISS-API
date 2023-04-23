@@ -15,7 +15,7 @@
   <body class="container">
     <div id="navbar">
       <ul>
-        <li><a href="ISS.html">ISS</a></li>
+        <li><a href="index.html">ISS</a></li>
         <li><a href="news.asp">News</a></li>
         <li><a href="contact.asp">Contact</a></li>
         <li><a href="about.asp">About</a></li>
@@ -25,17 +25,18 @@
     <div class="rounded-3 text-center" id="head">
       <h1>Simple JS Chat App using Broadcast API</h1>
     </div>
+    <div class="chat">
+      <div class="p-4 my-3 rounded text-center" id="type">
+        <h2>Please send message below...</h2>
+        <textarea class="form-control" id="comm"></textarea>
+        <br />
+        <br />
+        <button class="button-30" role="button">Send Message</button>
+      </div>
 
-    <div class="p-4 my-3 rounded text-center" id="type">
-      <h2>Please send message below...</h2>
-      <textarea class="form-control" id="comm"></textarea>
-      <br />
-      <br />
-      <button class="button-30" role="button">Send Message</button>
-    </div>
-
-    <div class="rounded-3 p-5 text-center" id="receive">
-      <h2 class="text-light text-center">Received Communication</h2>
+      <div class="rounded-3 p-5 text-center" id="receive">
+        <h2 class="text-light text-center">Received Communication</h2>
+      </div>
     </div>
 
     <script src="Chat_App/broadcast.js"></script>
